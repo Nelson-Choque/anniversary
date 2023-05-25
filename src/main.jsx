@@ -7,9 +7,13 @@ import Image from "./components/Image.jsx";
 import TextTyping from "./components/TextTyping.jsx";
 import HappyBirthey from "./components/HappyBirthey.jsx";
 import Gift from "./components/Gift.jsx";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  createHashRouter,
+  RouterProvider,
+} from "react-router-dom";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,
