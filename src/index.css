@@ -70,8 +70,38 @@ input:focus-visible{
 
 }
 
-.box:hover .box-head-active{
+.box-head-active{
     transform: rotate(-45deg) translateY(-100%);
+    opacity: .5;
+
+}
+
+.box-body{
+    transition: Opacity 1s ease ;
+}
+
+.box-body-active{
+    opacity: .5;
+
+}
+
+.clue{
+
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    opacity: 0;
+    transition: 1s all ease;
+
+
+}
+.clue-active{
+
+    position: absolute;
+    top: -50%;
+    left: 25%;
+    opacity: 1;
+
 }
 
 
@@ -195,3 +225,4 @@ input:focus-visible{
     height: 100%;
     margin: auto;
 }
+
