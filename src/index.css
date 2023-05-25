@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+input:focus-visible{
+
+    outline: none;
+
+}
+
+
+
 .max-h-50-full{
 
     max-height: 50%;
@@ -155,4 +163,35 @@
       
     }
     
+}
+
+/* ---------------------------day----------- */
+
+
+.transicion{
+    opacity: 0;
+    animation: opacityTransicion .5s ease forwards;
+}
+
+
+@keyframes opacityTransicion {
+
+    0%{
+
+    }
+
+    100%{
+
+        opacity: 1;
+    }
+    
+}
+
+
+/* -----------utilites-------- */
+
+.container{
+    max-width: 576px;
+    height: 100%;
+    margin: auto;
 }
