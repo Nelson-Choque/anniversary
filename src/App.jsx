@@ -57,7 +57,7 @@ function App() {
         <div className="container">
           <div className="h-full p-4 flex flex-col items-center justify-center">
             <h2 className="text-white font-bold text-3xl text-center ">
-              FECHA DE ANIVERSARIO
+              FECHA DE NUESTRA PRIMERA CITA
             </h2>
             <p className="mt-2 text-white text-center ">
               para continuar debes ingresar la fecha de nuestro aniversario 💖
