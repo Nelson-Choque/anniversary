@@ -34,7 +34,7 @@ function TextTyping() {
       <h2 className="p-4 transicion text-center text-white text-2xl text-candara">
         {phrase}
       </h2>
-      <img className="gif-stitch" src="/images/stich-transparent.gif" alt="" />
+      <img className="gif-stitch" src="/images/gif-2-unscreen.gif" alt="" />
     </div>
   );
 }
