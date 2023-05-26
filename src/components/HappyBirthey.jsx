@@ -16,7 +16,7 @@ function HappyBirthey() {
   const updateTime = () => {
     const actualTime = new Date();
 
-    console.log({ finalDate, actualTime });
+    // console.log({ finalDate, actualTime });
 
     const diferenciaEnMilisegundos = finalDate - actualTime;
 
