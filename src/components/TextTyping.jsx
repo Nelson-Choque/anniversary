@@ -7,7 +7,7 @@ function TextTyping() {
   useEffect(() => {
     const stlyeTyping = () => {
       const text =
-        "Ese dia nos conocimos y desde ese momento mi mundo cambio...";
+        "Ese día te vi tan feliz y desde ese momento mi mundo cambio...";
       let letters = "";
       let counter = -1;
 
