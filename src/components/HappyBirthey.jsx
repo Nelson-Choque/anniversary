@@ -54,7 +54,9 @@ function HappyBirthey() {
         <h2 className="text-2xl text-white text-center font-bold">
           Tú Cumpleaños
         </h2>
-        <p className="text-white">Falta poco para el gran dia 💖</p>
+        <p className="text-white text-center">
+          Falta poco para el gran dia y te tengo una sorpresa 💖
+        </p>
 
         <section className="flex flex-wrap gap-4 justify-center mt-4">
           <CardDate date={date.dias} name="dias" />

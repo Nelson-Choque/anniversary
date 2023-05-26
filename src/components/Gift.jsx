@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Gift() {
+  const navigate = useNavigate();
   const refHead = useRef();
   const refClue = useRef();
   const refBody = useRef();
@@ -13,7 +15,7 @@ function Gift() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-blue-800 ">
-      <div className="box relative" onClick={openBox}>
+      <div className="transicion box relative" onClick={openBox}>
         <div ref={refHead} className="head relative box-head">
           <div className="w-52 h-10 bg-box-primary relative z-40 rounded-lg box-shadow"></div>
           <div className="absolute-v-50 w-10 h-full bg-box-secundary z-50 "></div>
@@ -36,8 +38,14 @@ function Gift() {
       </div>
 
       <p className="text-white text-center my-4 font-semibold">
-        Presiona la caja para ver la pista
+        Presiona la caja para ver la pista de la sorpresa
       </p>
+      <button
+        className="px-4 py-2 mt-4 rounded-2xl bg-blue-600 text-white"
+        onClick={() => navigate("/happy-birthey")}
+      >
+        Regresar
+      </button>
     </div>
   );
 }
