@@ -14,7 +14,7 @@ function TextTyping() {
       const changeText = setInterval(() => {
         if (counter === text.length - 1) {
           setTimeout(() => {
-            // navigate("/happy-birthey");
+            navigate("/happy-birthey");
           }, 2000);
           console.log("se termino");
           clearInterval(changeText);
