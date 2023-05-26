@@ -52,20 +52,20 @@ function HappyBirthey() {
     <div className="min-h-screen flex justify-center items-center bg-blue-800 overflow-hidden">
       <div className="transicion h-full flex flex-col justify-center items-center p-4">
         <h2 className="text-2xl text-white text-center font-bold">
-          Tú Cumpleaños
+          Tu Cumpleaños
         </h2>
         <p className="text-white text-center">
           Falta poco para el gran dia y te tengo una sorpresa 💖
         </p>
 
         <section className="flex flex-wrap gap-4 justify-center mt-4">
-          <CardDate date={date.dias} name="dias" />
-          <CardDate date={date.horas} name="minutos" />
-          <CardDate date={date.minutos} name="segundos" />
-          <CardDate date={date.segundos} name="segundos" />
+          <CardDate date={date.dias} name="Dias" />
+          <CardDate date={date.horas} name="Horas" />
+          <CardDate date={date.minutos} name="Minutos" />
+          <CardDate date={date.segundos} name="Segundos" />
         </section>
         <button
-          className="block mx-auto px-4 py-2 my-4 rounded-2xl bg-blue-600 text-white"
+          className="block mx-auto px-4 py-2 my-4 rounded-2xl bg-blue-900 text-white uppercase font-semibold"
           onClick={changeScreen}
         >
           Ver pista

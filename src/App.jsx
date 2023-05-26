@@ -15,7 +15,7 @@ function App() {
 
   const refDate = useRef();
 
-  const dateAnniversary = "3/5/2023";
+  const dateAnniversary = "30/09/2022";
 
   const validateDate = () => {
     const date = refDate.current.value;
@@ -32,7 +32,14 @@ function App() {
       arrayDate[1] - 1,
       arrayDate[2]
     ).toLocaleDateString();
-    if (!(dateFormat === dateAnniversary)) {
+
+    const arrayDateFormat = dateFormat.split("/");
+
+    const inputDate = arrayDateFormat.map((e) =>
+      e.length < 2 ? `0${e}` : `${e}`
+    );
+
+    if (!(inputDate.join("/") === dateAnniversary)) {
       setErrorMessageActive(true);
       return "";
     }
@@ -61,7 +68,7 @@ function App() {
               type="date"
             />
             <button
-              className="px-4 py-2 mt-4 rounded-2xl bg-blue-600 text-white"
+              className="px-4 py-2 mt-4 rounded-2xl bg-blue-900 font-semibold uppercase text-white"
               onClick={validateDate}
             >
               Ingresar
@@ -101,7 +108,7 @@ function ErrorMessage({ setErrorMessageActive }) {
               <div className="heart-particle heart-particle-3"></div>
             </h2>
             <p className="mt-4 text-white font-semibold text-center text-2xl">
-              ¿Que paso amor? olvidaste nuestro aniversario 😢
+              ¿Qué pasó, amor? Olvidaste la fecha de nuestra primera cita 😢
             </p>
           </div>
         </div>

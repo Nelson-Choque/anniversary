@@ -41,7 +41,7 @@ function Gift() {
         Presiona la caja para ver la pista de la sorpresa
       </p>
       <button
-        className="px-4 py-2 mt-4 rounded-2xl bg-blue-600 text-white"
+        className="px-4 py-2 mt-4 rounded-2xl  bg-blue-900 text-white uppercase font-semibold"
         onClick={() => navigate("/happy-birthey")}
       >
         Regresar
