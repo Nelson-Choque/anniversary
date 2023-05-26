@@ -5,10 +5,10 @@ function Day() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // const timer = setTimeout(() => navigate("/image"), 3000);
+    const timer = setTimeout(() => navigate("/image"), 3000);
 
     return () => {
-      // clearTimeout(timer);
+      clearTimeout(timer);
     };
   });
 
