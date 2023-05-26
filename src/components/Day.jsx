@@ -14,8 +14,11 @@ function Day() {
 
   return (
     <div className="h-screen bg-blue-800">
-      <div className="transicion h-full flex items-center justify-center">
-        <h2 className="text-white text-center text-4xl font-bold">DIA 1</h2>
+      <div className="transicion h-full flex gap-4  items-center justify-center">
+        <img className="w-16 heart-day" src="/images/heart.png" alt="" />
+
+        <h2 className=" text-white text-center text-4xl font-bold">DIA 1</h2>
+        <img className="w-16 heart-day" src="/images/heart.png" alt="" />
       </div>
     </div>
   );
