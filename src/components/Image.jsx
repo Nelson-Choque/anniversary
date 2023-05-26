@@ -5,10 +5,10 @@ function Image() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // const timer = setTimeout(() => navigate("/text-typing"), 5000);
+    const timer = setTimeout(() => navigate("/text-typing"), 5000);
 
     return () => {
-      // clearTimeout(timer);
+      clearTimeout(timer);
     };
   });
 
