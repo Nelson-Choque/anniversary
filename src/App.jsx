@@ -68,7 +68,7 @@ function App() {
               type="date"
             />
             <button
-              className="px-4 py-2 mt-4 rounded-2xl bg-blue-900 font-semibold uppercase text-white"
+              className="px-4 py-2 mt-4 rounded-2xl bg-blue-500 font-semibold uppercase text-white"
               onClick={validateDate}
             >
               Ingresar

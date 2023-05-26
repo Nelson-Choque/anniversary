@@ -65,7 +65,7 @@ function HappyBirthey() {
           <CardDate date={date.segundos} name="Segundos" />
         </section>
         <button
-          className="block mx-auto px-4 py-2 my-4 rounded-2xl bg-blue-900 text-white uppercase font-semibold"
+          className="block mx-auto px-4 py-2 my-4 rounded-2xl bg-blue-500 font-semibold uppercase text-white"
           onClick={changeScreen}
         >
           Ver pista
