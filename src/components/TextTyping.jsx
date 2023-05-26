@@ -31,7 +31,9 @@ function TextTyping() {
 
   return (
     <div className="h-screen bg-blue-800 flex flex-col items-center justify-center">
-      <h2 className="transicion text-center text-white text-2xl">{phrase}</h2>
+      <h2 className="p-4 transicion text-center text-white text-2xl">
+        {phrase}
+      </h2>
     </div>
   );
 }

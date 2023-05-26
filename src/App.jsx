@@ -81,7 +81,7 @@ function ErrorMessage({ setErrorMessageActive }) {
   };
 
   return (
-    <div className=" flex items-center justify-center w-full p-4 min-h-screen bg-blue-800">
+    <div className="absolute top-0 left-0 flex items-center justify-center w-full p-4 min-h-screen bg-blue-800">
       <div className="container">
         <div className="transicion h-full flex flex-col items-center justify-center relative">
           <div className="absolute right-0 top-0">
