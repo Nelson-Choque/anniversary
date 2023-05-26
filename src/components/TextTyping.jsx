@@ -30,7 +30,7 @@ function TextTyping() {
   }, []);
 
   return (
-    <div className="h-screen bg-blue-800 flex flex-col items-center justify-center">
+    <div className="min-h-screen bg-blue-800 flex flex-col items-center justify-center">
       <h2 className="p-4 transicion text-center text-white text-2xl">
         {phrase}
       </h2>
