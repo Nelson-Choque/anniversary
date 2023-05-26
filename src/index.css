@@ -248,3 +248,39 @@ input:focus-visible{
         transform: scale(1.2);
     }
 }
+
+/* .bgText{
+    animation: textBg 8s ease infinite alternate;
+} */
+
+@keyframes textBg {
+    0%{
+        @apply bg-sky-900
+
+    }
+
+    25%{
+        @apply bg-orange-400
+    }
+
+    50%{
+        @apply bg-green-600
+    }
+
+    75%{
+        @apply bg-sky-600
+    }
+
+    100%{
+        @apply bg-red-500
+    }
+}
+
+.gif-stitch{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    max-height: 50%;
+    object-fit: contain;
+}
