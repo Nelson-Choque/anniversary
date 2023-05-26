@@ -226,3 +226,10 @@ input:focus-visible{
     margin: auto;
 }
 
+@media (max-height:600px) {
+
+    .box{
+        margin-top: 8rem;
+    }
+    
+}
