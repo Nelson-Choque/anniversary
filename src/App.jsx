@@ -60,7 +60,7 @@ function App() {
               FECHA DE NUESTRA PRIMERA CITA
             </h2>
             <p className="mt-2 text-white text-center ">
-              para continuar debes ingresar la fecha de nuestro aniversario 💖
+              para continuar debes ingresar la fecha de nuestra primera cita 💖
             </p>
             <input
               ref={refDate}
