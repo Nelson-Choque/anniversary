@@ -59,7 +59,7 @@ function App() {
             <h2 className="text-white font-bold text-3xl text-center ">
               FECHA DE NUESTRA PRIMERA CITA
             </h2>
-            <p className="mt-2 text-white text-center ">
+            <p className="mt-2 text-white text-center text-normal">
               para continuar debes ingresar la fecha de nuestra primera cita 💖
             </p>
             <input

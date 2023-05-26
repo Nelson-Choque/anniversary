@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Candara';
+    src: url('/fonts/Candara.ttf');
+  }
+
+
+
+
+.text-candara{
+    font-family: 'Candara', sans-serif !important;
+    font-weight: 500 !important;
+    
+}
+
+
+
+
 input:focus-visible{
 
     outline: none;

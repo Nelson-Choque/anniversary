@@ -5,10 +5,10 @@ function Day() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const timer = setTimeout(() => navigate("/image"), 3000);
+    // const timer = setTimeout(() => navigate("/image"), 3000);
 
     return () => {
-      clearTimeout(timer);
+      // clearTimeout(timer);
     };
   });
 
@@ -17,7 +17,9 @@ function Day() {
       <div className="transicion h-full flex gap-4  items-center justify-center">
         <img className="w-16 heart-day" src="/images/heart.png" alt="" />
 
-        <h2 className=" text-white text-center text-4xl font-bold">DIA 1</h2>
+        <h2 className=" text-white text-center text-4xl text-sans-serif">
+          DIA 1
+        </h2>
         <img className="w-16 heart-day" src="/images/heart.png" alt="" />
       </div>
     </div>

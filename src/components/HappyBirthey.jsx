@@ -53,10 +53,10 @@ function HappyBirthey() {
   return (
     <div className="min-h-screen flex justify-center items-center bg-blue-800 overflow-hidden">
       <div className="transicion h-full flex flex-col justify-center items-center p-4">
-        <h2 className="text-2xl text-white text-center font-bold">
+        <h2 className="text-3xl text-white text-center text-bold">
           Tu Cumpleaños
         </h2>
-        <p className="text-white text-center">
+        <p className="text-white text-center text-normal">
           Falta poco para el gran dia y te tengo una sorpresa 💖
         </p>
 
@@ -84,7 +84,9 @@ function CardDate({ date, name }) {
         {date}
       </div>
 
-      <div className="text-center text-white mt-2 capitalize">{name}</div>
+      <div className="text-center text-white mt-2 capitalize text-normal">
+        {name}
+      </div>
     </article>
   );
 }
