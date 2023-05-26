@@ -21,8 +21,9 @@ function Image() {
           </h2>
           <img
             className="mt-4 rounded-2xl w-full max-h-50-full object-cover object-center"
-            src="/images/couple-2.jpg"
+            src="/images/couple-2.webp"
             alt="image couple"
+            loading="lazy"
           />
         </div>
       </div>
