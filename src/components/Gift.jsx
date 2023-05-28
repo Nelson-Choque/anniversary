@@ -32,8 +32,8 @@ function Gift() {
         <img
           ref={refClue}
           className="clue"
-          src="/images/pista-2.png"
-          alt="pista 1"
+          src="/images/pista3.png"
+          alt="pista"
         />
       </div>
 

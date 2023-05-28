@@ -7,7 +7,7 @@ function TextTyping() {
   useEffect(() => {
     const stlyeTyping = () => {
       const text =
-        "Cuando lograste una de tus metas y todos estábamos muy orgullosos";
+        "    Unas de las mil fotos que te tomé y en todas muy hermosa";
       let letters = "";
       let counter = -1;
 

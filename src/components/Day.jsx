@@ -18,7 +18,7 @@ function Day() {
         <img className="w-16 heart-day" src="/images/heart.png" alt="" />
 
         <h2 className=" text-white text-center text-4xl text-sans-serif">
-          DIA 2
+          DIA 3
         </h2>
         <img className="w-16 heart-day" src="/images/heart.png" alt="" />
       </div>
