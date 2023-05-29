@@ -6,8 +6,7 @@ function TextTyping() {
   const navigate = useNavigate();
   useEffect(() => {
     const stlyeTyping = () => {
-      const text =
-        "    Unas de las mil fotos que te tomé y en todas muy hermosa";
+      const text = "Las que mandan en casa, las mujeres Arenas";
       let letters = "";
       let counter = -1;
 
