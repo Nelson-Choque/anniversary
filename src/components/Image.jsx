@@ -17,11 +17,15 @@ function Image() {
       <div className="container">
         <div className="transicion h-full flex flex-col items-center justify-center p-4">
           <h2 className="text-white text-center text-2xl font-bold">
-            Fotito familiar...
+            FELIZ CUMPLEAÑOS AMOR 🤎
           </h2>
+          <p className="text-white">
+            Para la arquitecta más hermosa, inteligente y divertida. Para la
+            chica más impredecible, tierna y loca.
+          </p>
           <img
             className="mt-4 rounded-2xl w-full object-cover object-center"
-            src="/images/FOTO4_LIGHT.png"
+            src="/images/img_final.webp"
             alt="image couple"
             loading="lazy"
           />

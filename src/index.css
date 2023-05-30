@@ -121,7 +121,87 @@ input:focus-visible{
 
 }
 
+/* --gift - letter - head */
 
+.letter-head{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: rotate(180deg);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.25);
+
+}
+
+.letter-head-shadow{
+    left: 50%;
+    transform: translateX(-50%) rotateZ(180deg) ;
+    width: 98%;
+    height: 98%;
+    margin: auto;
+}
+
+.letter-head-shadow--active{
+    
+    animation: open-letter .5s ease forwards;
+
+
+}
+
+.carte{
+    clip-path: circle(0%);
+    position: fixed;
+    top: 0;
+    left: 50%;
+    
+    transform: translateX(-50%);
+
+    width: 100%;
+    height: 100%;
+    background-color: #DFEFEE;
+
+    transition: 1s all ease;
+}
+
+.carte--active{
+    animation: open-carte 1s ease forwards;
+    animation-delay: .5s;
+
+}
+
+@keyframes open-letter {
+
+    0%{
+        transform: translateX(-50%) rotate(180deg);
+
+    }
+
+
+
+    100%{
+        transform: translateX(-50%) translateY(-100%) rotateZ(180deg) rotateX(180deg) ;
+
+    }
+    
+}
+
+@keyframes open-carte {
+
+    0%{
+        clip-path: circle(0%);
+
+    }
+
+
+
+    100%{
+        clip-path: circle(100%);
+
+    }
+    
+}
 /* --------------hearth----------------- */
 
 .heart{

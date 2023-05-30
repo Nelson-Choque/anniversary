@@ -1,8 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import ReactConfetti from "react-confetti";
 
 function HappyBirthey() {
   const navigate = useNavigate();
+
+  const [windowsDimensions, setWindowsDimensions] = useState({
+    widht: window.innerWidth,
+    height: window.innerHeight,
+  });
 
   const [date, setDate] = useState({
     dias: "",
@@ -50,28 +56,47 @@ function HappyBirthey() {
 
   const changeScreen = () => navigate("/gift");
 
+  const changeResizeConfetti = () => {
+    console.log("cambio");
+    setWindowsDimensions({
+      ...windowsDimensions,
+      widht: window.innerWidth,
+      height: window.innerHeight,
+    });
+  };
+
+  useEffect(() => {
+    addEventListener("resize", changeResizeConfetti);
+
+    return () => window.removeEventListener("resize", changeResizeConfetti);
+  }, []);
+
   return (
-    <div className="min-h-screen flex justify-center items-center bg-blue-800 overflow-hidden">
+    <div
+      id="my-canvas"
+      className="min-h-screen flex justify-center items-center bg-blue-800 overflow-hidden"
+    >
       <div className="transicion h-full flex flex-col justify-center items-center p-4">
         <h2 className="text-3xl text-white text-center text-bold">
-          Tu Cumpleaños
+          Feliz cumpleaños Amor 🤎
         </h2>
-        <p className="text-white text-center text-normal">
-          Falta poco para el gran dia y te tengo una sorpresa 💖
-        </p>
 
         <section className="flex flex-wrap gap-4 justify-center mt-4">
-          <CardDate date={date.dias} name="Dias" />
-          <CardDate date={date.horas} name="Horas" />
-          <CardDate date={date.minutos} name="Minutos" />
-          <CardDate date={date.segundos} name="Segundos" />
+          <CardDate date={0} name="Dias" />
+          <CardDate date={0} name="Horas" />
+          <CardDate date={0} name="Minutos" />
+          <CardDate date={0} name="Segundos" />
         </section>
         <button
           className="block mx-auto px-4 py-2 my-4 rounded-2xl bg-blue-500 font-semibold uppercase text-white"
           onClick={changeScreen}
         >
-          Ver pista
+          Ver Regalo
         </button>
+        <ReactConfetti
+          width={windowsDimensions.widht}
+          height={windowsDimensions.height}
+        ></ReactConfetti>
       </div>
     </div>
   );

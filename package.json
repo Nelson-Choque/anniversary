@@ -10,8 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "confetti-js": "^0.0.18",
     "postcss": "^8.4.23",
     "react": "^18.2.0",
+    "react-confetti": "^6.1.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.2"
   },
